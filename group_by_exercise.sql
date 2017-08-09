@@ -18,4 +18,5 @@ group by first_name, last_name;
 select *
 from employees
 where last_name like '%q%'
-and last_name not like '%qu%';
+and last_name not like '%qu%'
+group by last_name;

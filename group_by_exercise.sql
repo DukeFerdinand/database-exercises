@@ -2,4 +2,4 @@ use employees;
 
 select *
 from titles
-group by title;
+group by title ASC;

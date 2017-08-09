@@ -25,7 +25,8 @@ where hire_date between '1990-01-01' and '1999-12-31'
 from employees
 where  */
 
-select *
+select first_name, last_name
 from employees
 where last_name like '%q%'
-and last_name not like '%qu%';
+and last_name not like '%qu%'
+order by count(last_name);
